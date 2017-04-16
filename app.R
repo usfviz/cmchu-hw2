@@ -1,3 +1,5 @@
+if("reshape2" %in% rownames(installed.packages()) == FALSE) {install.packages("reshape2")}
+if("tidyr" %in% rownames(installed.packages()) == FALSE) {install.packages("tidyr")}
 if("ggrepel" %in% rownames(installed.packages()) == FALSE) {install.packages("ggrepel")}
 
 library(shiny)
