@@ -59,7 +59,7 @@ df <- df %>% drop_na(Country, Year, Life_Expectancy, Fertility_Rate, Region, Pop
 
 ui <- fluidPage(
   mainPanel(
-    selectInput("plot_select", "Continent", 
+    selectInput("plot_select", "Region", 
                 c("All", sort(as.character(unique(df$Region))))),
     selectInput("select_country", "Countries to Track",
                 sort(as.character(unique(df$Country))), multiple=TRUE),
